@@ -15,6 +15,7 @@ CREATE TABLE `NYK_User` (
   `lastLat` float(11),
   `addTime` timestamp NOT NULL COMMENT 'time when the user is added.',
   `updateTime` timestamp NOT NULL COMMENT 'time when the user is updated.',
+  `status` tinyint(4) DEFAULT 1,
   PRIMARY KEY (`id`),
   KEY `IX_City` (lastCity)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='nianyike user information';
