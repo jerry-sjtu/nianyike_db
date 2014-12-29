@@ -1,6 +1,6 @@
-drop table NYK_User;
+drop table NYK_Book;
 
-CREATE TABLE `NYK_User` (
+CREATE TABLE `NYK_Book` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `extsource` varchar(256) NOT NULL,
   `isbn10` char(10),
