@@ -12,7 +12,7 @@ CREATE TABLE `NYK_Book` (
   `authors` varchar(256) NOT NULL,
   `translators` varchar(256),
   `publisher` varchar(256) NOT NULL,
-  `pubTime` timestamp NOT NULL,
+  `pubTime` timestamp,
   `price` float NOT NULL,
   `pageNum` int(11) NOT NULL,
   `summary` varchar(2048) NOT NULL,
