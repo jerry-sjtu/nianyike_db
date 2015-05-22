@@ -1,5 +1,7 @@
 drop table NYK_Book;
 
+ALTER TABLE NYK_BookCategory AUTO_INCREMENT = 1;
+
 CREATE TABLE `NYK_Book` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `externalResource` varchar(256) NOT NULL,
@@ -27,9 +29,9 @@ CREATE TABLE `NYK_Book` (
 
 CREATE TABLE `NYK_BookCategory` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` char(10),
-  `parentId` char(13),
+  `name` varchar(256) NOT NULL,
+  `parentId` int(11) NOT NULL DEFAULT 0,
   `addTime` timestamp NOT NULL COMMENT 'time when the category is added.',
   `updateTime` timestamp NOT NULL COMMENT 'time when the category is updated.',
-  PRIMARY KEY (`id`),
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='nianyike book category';
