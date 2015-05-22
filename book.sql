@@ -24,3 +24,12 @@ CREATE TABLE `NYK_Book` (
   UNIQUE KEY (`isbn10`),
   UNIQUE KEY (`isbn13`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='nianyike book information';
+
+CREATE TABLE `NYK_BookCategory` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` char(10),
+  `parentId` char(13),
+  `addTime` timestamp NOT NULL COMMENT 'time when the category is added.',
+  `updateTime` timestamp NOT NULL COMMENT 'time when the category is updated.',
+  PRIMARY KEY (`id`),
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='nianyike book category';

@@ -6,6 +6,7 @@ CREATE TABLE `NYK_UserBookRel` (
   `bookId` int(11),
   `status` tinyint(4) NOT NULL DEFAULT 1,
   `comment` varchar(2048) NOT NULL,
+  `star` tinyint(4) NOT NULL DEFAULT 0,
   `addTime` timestamp NOT NULL,
   `updateTime` timestamp NOT NULL,
   PRIMARY KEY (`id`)
@@ -22,7 +23,6 @@ CREATE TABLE NYK_BookFollow (
     updateTime timestamp NOT NULL,
     PRIMARY KEY(`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
-
 
 
 CREATE TABLE NYK_UserFollow (
