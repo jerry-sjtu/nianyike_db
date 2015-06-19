@@ -5,7 +5,7 @@ CREATE TABLE `NYK_Advertisement` (
   `position` varchar(256) NOT NULL,
   `priority` int(11) NOT NULL DEFAULT 0,
   `type` varchar(256),
-  `addUrl` varchar(1024),
+  `adUrl` varchar(1024),
   `imgUrl` varchar(1024) NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT 1,
   `addTime` timestamp NOT NULL,
